@@ -34,10 +34,6 @@ module.exports = {
 };
 
 
-const tracker = createLoginTracker({ username: "user1", password: "password123" });
 
-console.log(tracker("wrongpass"));      // Attempt 1: Login failed
-console.log(tracker("12345"));          // Attempt 2: Login failed
-console.log(tracker("password123"));    // Login successful
-console.log(tracker("anything"));       // Account locked due to too many failed login attempts
+
 
